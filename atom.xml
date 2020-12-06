@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nnxv.github.io</id>
     <title>T.</title>
-    <updated>2020-12-06T11:06:28.397Z</updated>
+    <updated>2020-12-06T11:07:23.941Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nnxv.github.io"/>
     <link rel="self" href="https://nnxv.github.io/atom.xml"/>
@@ -260,9 +260,9 @@ hack方法比上面2种方法稳定得多，但是语义化太差。</p>
 <p>任务列表<br>
 Markdown 语法：</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1641832"> 任务一 未做任务 <label class="task-list-item-label" for="task-item-1641832"> 任务一 未做任务 `- + 空格 + [ ]`</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1982122"> 任务二 已做任务 <code>- + 空格 + [x]</code><br>
-<label class="task-list-item-label" for="task-item-1982122"> 任务二 已做任务 `- + 空格 + [x]`
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6893182"> 任务一 未做任务 <label class="task-list-item-label" for="task-item-6893182"> 任务一 未做任务 `- + 空格 + [ ]`</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-2824675"> 任务二 已做任务 <code>- + 空格 + [x]</code><br>
+<label class="task-list-item-label" for="task-item-2824675"> 任务二 已做任务 `- + 空格 + [x]`
 效果如下：</label></li>
 </ul>
 <p>任务一 未做任务 - + 空格 + [ ]<br>
