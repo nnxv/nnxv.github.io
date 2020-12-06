@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nnxv.github.io</id>
     <title>Gridea</title>
-    <updated>2020-12-06T08:15:23.074Z</updated>
+    <updated>2020-12-06T08:17:02.944Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nnxv.github.io"/>
     <link rel="self" href="https://nnxv.github.io/atom.xml"/>
@@ -10,16 +10,6 @@
     <logo>https://nnxv.github.io/images/avatar.png</logo>
     <icon>https://nnxv.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[令人悲伤]]></title>
-        <id>https://nnxv.github.io/post/ling-ren-bei-shang/</id>
-        <link href="https://nnxv.github.io/post/ling-ren-bei-shang/">
-        </link>
-        <updated>2020-12-06T08:14:25.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="她竟然也有了对象-这真的让我有点">她竟然也有了对象 这真的让我有点</h3>
-<h3 id="哎-也不知道该说什么-祝福她">哎 也不知道该说什么 祝福她</h3>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://nnxv.github.io/post/hello-gridea/</id>
