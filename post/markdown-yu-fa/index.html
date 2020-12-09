@@ -10,7 +10,7 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
     <link rel="stylesheet" href="https://hhxny.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://hhxny.github.io/styles/main.css">
     
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/dracula.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
     
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
@@ -24,12 +24,13 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
     
     <style>
         .markdownIt-TOC {
+            margin-left: 28%;
             padding-left: 2px;
-            width: 100%;
+            width: 80%;
         }
 
         .markdownIt-TOC li {
-            padding-left: 2%;
+            padding-left: 8%;
         }
     </style>
     
@@ -40,7 +41,7 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
         <div class="message" style="opacity:0"></div>
         <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
     </div>
-    <div id="codeCopyText" style="display: none"></div>
+    <div id="codeCopyText" style="display: none">代码复制成功了哦</div>
     <div id="domainname" style="display:none">https://hhxny.github.io</div>
     <!-- 响应式布局，针对PC端内容显示 -->
     <div id="content">
@@ -121,6 +122,9 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
           
           
           
+          <li><a href="https://hhxny.github.io/friends">友链</a></li>
+
+          
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -161,6 +165,80 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
             <div class="row">
                 <div class="side"><body>
     
+    <div id=side>
+        <div class="avatar-border">
+            <img src="https://hhxny.github.io/images/avatar.png?v=1607497472474" class="avatar">
+        </div>
+        <div class="sitename">T.</div>
+        <span class="describtion" data-text='["> 欢迎来到我的小站呀，很高兴遇见你！🤝
+"]'>&nbsp;</span>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
+        </div>
+        
+    <div class="share-button">
+        <span>社交按钮</span>
+        
+        
+        
+        
+        
+        
+    </div>
+    <div id="qq" style="display:none"></div>
+    
+    
+    <div class="mchocie describtion">
+        <a href="/" class="menubutton">
+            首页
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/archives" class="menubutton">
+            归档
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/tags" class="menubutton">
+            标签
+        </a>
+    </div>
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="/post/about" class="menubutton">
+            关于
+        </a>
+    </div>
+    
+    
+    
+    
+    <div class="mchocie describtion">
+        <a href="https://hhxny.github.io/friends" class="menubutton">友人帐</a>
+    </div>
+    
+    <hr>
+    <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
+        href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
+    
+    
+    </div>
+
+
+<script src="https://hhxny.github.io/media/js/wordshow.js"></script>
+    
+
 
 
 
@@ -298,9 +376,17 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
 </script>
 </div>
                 
-            <div class="col-md-2 col-lg-3"></div>
-            <div id="postmain" class="col-xs-12 col-sm-12 col-md-8  col-lg-6 posttop" >
-                <link rel="stylesheet" href="https://hhxny.github.io/media/css/font-awesome.css">
+                <div id="tab1" class="tab">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close"></div>
+                </div>
+                <div class="col-md-1 col-lg-3"></div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-10 col-lg-7">
+                    <link rel="stylesheet" href="https://hhxny.github.io/media/css/font-awesome.css">
 
 <body>
     <div class="allcontent" id="postdetail">
@@ -372,9 +458,9 @@ hack方法比上面2种方法稳定得多，但是语义化太差。</p>
 <p>任务列表<br>
 Markdown 语法：</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3646447"> 任务一 未做任务 <label class="task-list-item-label" for="task-item-3646447"> 任务一 未做任务 `- + 空格 + [ ]`</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1807677"> 任务二 已做任务 <code>- + 空格 + [x]</code><br>
-<label class="task-list-item-label" for="task-item-1807677"> 任务二 已做任务 `- + 空格 + [x]`
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4284135"> 任务一 未做任务 <label class="task-list-item-label" for="task-item-4284135"> 任务一 未做任务 `- + 空格 + [ ]`</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4429579"> 任务二 已做任务 <code>- + 空格 + [x]</code><br>
+<label class="task-list-item-label" for="task-item-4429579"> 任务二 已做任务 `- + 空格 + [x]`
 效果如下：</label></li>
 </ul>
 <p>任务一 未做任务 - + 空格 + [ ]<br>
@@ -746,6 +832,35 @@ B-&gt;&gt;A: Great!<br>
             </div>
             <hr style="width: 80%;">
             
+            <div class="sharebtnContainer">
+                <button type="button" class="sharebtn">转载分享</button>
+            </div>
+            <div class="shareContainer">
+                <div class="share" style="height:30px;background: white;">
+                    <a class="qq" href=""><i><img class="shareicon"
+                                src="https://hhxny.github.io/media/images/QQ.png" alt=""></i></a>
+                    <a class="wechat" href=""><i><img class="shareicon"
+                                src="https://hhxny.github.io/media/images/wechat.png" alt=""></i></a>
+                    <a class="weibo" href=""><i><img class="shareicon"
+                                src="https://hhxny.github.io/media/images/weibo.png" alt=""></i></a>
+                    <a class="qzone" href=""><i><img class="shareicon"
+                                src="https://hhxny.github.io/media/images/qzone.png" alt=""></i></a>
+                    <a class="douban" href=""><i><img class="shareicon"
+                                src="https://hhxny.github.io/media/images/douban.png" alt=""></i></a>
+                    <a class="facebook" href=""><i><img class="shareicon"
+                                src="https://hhxny.github.io/media/images/facebook.png" alt=""></i></a>
+                    <a class="twitter" href=""><i><img class="shareicon"
+                                src="https://hhxny.github.io/media/images/twitter.png" alt=""></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="donateContainer">
+                <img src="https://hhxny.github.io/media/images/donate.png" alt="" class="donateImg">
+            </div>
+            <div class="donateContainer">
+                <img src="" alt="" class="donate">
+            </div>
             
             <div class="postfooter">
                 <ul class="post-copyright">
@@ -785,7 +900,7 @@ B-&gt;&gt;A: Great!<br>
     pl = pl.replace(rootaddr, "");
     $("#hotnum").attr('id', pl);
 </script>
-                <div id="comment" class="comment" style="background: white">
+                <div id="comment"  class="comment" style="background: white">
                     <div class="commentcontainer">
                         
                         
@@ -815,13 +930,12 @@ B-&gt;&gt;A: Great!<br>
                         
                     </div>
                 </div>
+                </div>
+                <div class="col-md-1 col-lg-2"></div>
+                <div id="bg">
+                </div>
             </div>
-            <div class="col-md-2 col-lg-3">
-            </div>
-            <div id="bg">
-            </div>
-        </div>
-        
+            
         
         <div class="toc-container">
             <ul class="markdownIt-TOC">
@@ -913,6 +1027,16 @@ B-&gt;&gt;A: Great!<br>
     });
 </script>
 
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js"></script>
+<script type="text/javascript" src="https://hhxny.github.io/media/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://hhxny.github.io/media/live2d/assets/tororo.model.json");
+</script>
+
 <script>
     $(function () {
         $('.toggleContainer').click(function () {
@@ -941,6 +1065,8 @@ B-&gt;&gt;A: Great!<br>
     bg.css("background", "url('" + bgurl + "')");
 </script>
 
+
+<script src="https://hhxny.github.io/media/js/index.js"></script>
 
 
 
