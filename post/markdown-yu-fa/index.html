@@ -167,7 +167,7 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://hhxny.github.io/images/avatar.png?v=1607498350829" class="avatar">
+            <img src="https://hhxny.github.io/images/avatar.png?v=1607498530639" class="avatar">
         </div>
         <div class="sitename">T.</div>
         <span class="describtion" data-text='["> 欢迎来到我的小站呀，很高兴遇见你！🤝
@@ -458,9 +458,9 @@ hack方法比上面2种方法稳定得多，但是语义化太差。</p>
 <p>任务列表<br>
 Markdown 语法：</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6044571"> 任务一 未做任务 <label class="task-list-item-label" for="task-item-6044571"> 任务一 未做任务 `- + 空格 + [ ]`</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9980318"> 任务二 已做任务 <code>- + 空格 + [x]</code><br>
-<label class="task-list-item-label" for="task-item-9980318"> 任务二 已做任务 `- + 空格 + [x]`
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-4908800"> 任务一 未做任务 <label class="task-list-item-label" for="task-item-4908800"> 任务一 未做任务 `- + 空格 + [ ]`</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9827545"> 任务二 已做任务 <code>- + 空格 + [x]</code><br>
+<label class="task-list-item-label" for="task-item-9827545"> 任务二 已做任务 `- + 空格 + [x]`
 效果如下：</label></li>
 </ul>
 <p>任务一 未做任务 - + 空格 + [ ]<br>
@@ -936,6 +936,70 @@ B-&gt;&gt;A: Great!<br>
                 </div>
             </div>
             
+        
+        <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+</head>
+<body>
+    <div class="miniMode">
+        <meting-js id="myaplayer" server="netease" type="playlist" fixed="true" order="default">
+        </meting-js>
+    </div>   
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script>
+    var aplayerid = "770405593";
+    var aplayerserver = "netease";
+    var aplayerorder = "random";
+    var aplayerautoplay = "false";
+    var aplayer = $("#myaplayer");
+    aplayer.attr("server",aplayerserver);
+    aplayer.attr("id",aplayerid);
+    aplayer.attr("order",aplayerorder);
+    if(aplayerautoplay=="true")
+        aplayer.attr("autoplay","true");
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/Aplayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<script>
+    function aplayerbtnInit(){
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        player.lrc.hide();
+        var mbabtn = $("#mbaplayer");
+        if(player.paused==false)
+        {
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        }
+        else
+        {
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+
+    function aplayerPlay(){
+        var player = document.querySelectorAll('meting-js')[0].aplayer;
+        var mbabtn = $("#mbaplayer");
+        if(player.paused==true)
+        {
+            player.play();
+            mbabtn.removeClass("fa-play-circle-o");
+            mbabtn.addClass("fa-pause-circle");
+        }
+        else
+        {
+            player.pause();
+            mbabtn.addClass("fa-play-circle-o");
+            mbabtn.removeClass("fa-pause-circle");
+        }
+    }
+</script>
         
         <div class="toc-container">
             <ul class="markdownIt-TOC">
