@@ -121,6 +121,8 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
           
           
           
+          <li><a href="https://hhxny.github.io/talk">说说</a></li>
+          
           
           <li><a href="https://hhxny.github.io/friends">友链</a></li>
 
@@ -167,7 +169,7 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://hhxny.github.io/images/avatar.png?v=1607516516197" class="avatar">
+            <img src="https://hhxny.github.io/images/avatar.png?v=1609489360372" class="avatar">
         </div>
         <div class="sitename">T.</div>
         <span class="describtion" data-text='["> 欢迎来到我的小站呀，很高兴遇见你！🤝
@@ -223,6 +225,10 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
     
     
     
+    <div class="mchocie describtion">
+        <a href="https://hhxny.github.io/talk" class="menubutton">说说</a>
+    </div>
+    
     
     <div class="mchocie describtion">
         <a href="https://hhxny.github.io/friends" class="menubutton">友人帐</a>
@@ -232,11 +238,55 @@ Markdown 语法灵感最大的来源还是纯文本 em..." />
     <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
         href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
     
+    <div class="sitetime"><div id="sitegotimeDate">载入天数...</div>
+    <div id="sitegotimes">载入时分秒...</div></div>
+    <div id="cussitetime" style="display:none">02/02/2020</div>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/busuanzi.pure.mini.js"></script>
+    <div id="vistornum">
+        <span id="busuanzi_container_site_uv">
+            <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 总访问量:<span id="busuanzi_value_site_pv"></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <i class="fa fa-user-o" aria-hidden="true"></i> 访问人数:<span id="busuanzi_value_site_uv"></span>
+        </span>
+    </div>
+    <div style="color:white"></div>
     
     </div>
 
 
 <script src="https://hhxny.github.io/media/js/wordshow.js"></script>
+    
+    <script>
+        //----------------------站点运行时间
+        var now = new Date();
+
+        function createtime() {
+            var sitegotime = document.getElementById("cussitetime").innerHTML + " 00:00:00";
+            var grt = new Date(sitegotime); //此处修改你的建站时间或者网站上线时间
+            now.setTime(now.getTime() + 250);
+            days = (now - grt) / 1000 / 60 / 60 / 24;
+            dnum = Math.floor(days);
+            hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+            hnum = Math.floor(hours);
+            if (String(hnum).length == 1) {
+                hnum = "0" + hnum;
+            }
+            minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes);
+            if (String(mnum).length == 1) {
+                mnum = "0" + mnum;
+            }
+            seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds);
+            if (String(snum).length == 1) {
+                snum = "0" + snum;
+            }
+            document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+            document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+        setInterval("createtime()", 250);
+    </script>
     
 
 
@@ -458,9 +508,9 @@ hack方法比上面2种方法稳定得多，但是语义化太差。</p>
 <p>任务列表<br>
 Markdown 语法：</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3103727"> 任务一 未做任务 <label class="task-list-item-label" for="task-item-3103727"> 任务一 未做任务 `- + 空格 + [ ]`</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3777541"> 任务二 已做任务 <code>- + 空格 + [x]</code><br>
-<label class="task-list-item-label" for="task-item-3777541"> 任务二 已做任务 `- + 空格 + [x]`
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9289726"> 任务一 未做任务 <label class="task-list-item-label" for="task-item-9289726"> 任务一 未做任务 `- + 空格 + [ ]`</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5973405"> 任务二 已做任务 <code>- + 空格 + [x]</code><br>
+<label class="task-list-item-label" for="task-item-5973405"> 任务二 已做任务 `- + 空格 + [x]`
 效果如下：</label></li>
 </ul>
 <p>任务一 未做任务 - + 空格 + [ ]<br>
